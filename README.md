@@ -1,4 +1,5 @@
-# 30DayChallengeCSS - desafio de 30 dias de códigos em HTML/CSS
+# 30DayChallengeCSS
+desafio de 30 dias de códigos em HTML/CSS
 
 🧐 Sobre o desafio
 Serão 30 dias fazendo mini projetos diários com HTML5 e CSS3 visando melhorar
