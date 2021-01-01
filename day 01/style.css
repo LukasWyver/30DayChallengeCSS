@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    /* background: #8257e5; */
+    background: linear-gradient(120deg,rgb(230, 71, 71), #eca554);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+h2{
+    color:rgb(156, 19, 19);
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 120px;
+    transition: 0.5s;
+}
+
+h2:hover{
+    color:rgb(156, 19, 19);
+    font-size: 52px;
+    margin-bottom: 130px;
+}
+/* ==== ícones Sociais ===== */
+
+.icons{
+    display: flex;}
+.icons a{
+    width: 60px;
+    height: 60px;
+    color:white;
+    background:none;
+    text-decoration: none;
+    margin:0 32px;
+    transform: rotate(-30deg) skew(25deg);
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icons span{
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    opacity: 0;
+    transform: 0.5;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.icons i.fab{
+    width: 100%;
+    height: 100%;
+    font-size: 28px;
+    border-radius: 4px;
+    transition: 0.5;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Cor */
+
+a:nth-child(1) i,a:nth-child(1) span{
+    background: #3b5998;
+}
+
+a:nth-child(2) i,a:nth-child(2) span{
+    background: #4FCE5D;
+}
+a:nth-child(3) i,a:nth-child(3) span{
+    background: #6cc1e3;
+}
+a:nth-child(4) i,a:nth-child(4) span{
+    background:#0073b1;
+}
+a:nth-child(5) i,a:nth-child(5) span{
+    background:#0057ff;
+}
+
+/* ==== animação ==== */
+a:hover i{
+    transform:translate(40px, -40px);
+}
+
+a:hover span:nth-child(4){
+    transform:translate(30px, -30px);
+    opacity: 0.8;
+}
+a:hover span:nth-child(3){
+    transform:translate(20px, -20px);
+    opacity: 0.6;
+}
+a:hover span:nth-child(2){
+    transform:translate(10px, -10px);
+    opacity: 0.4;
+}
+a:hover span:nth-child(1){
+    transform:translate(0px, -0px);
+    opacity: 0.2;
+}
+
+/* ==== footer ==== */ 
+.rodape{
+    margin: 100px 0 0; 
+    display: flex;
+}
+footer h3, footer a{
+  opacity: 0.5;
+  text-decoration: none;
+}
+footer a{
+    margin-left: 10px;
+    color:white;
+}
