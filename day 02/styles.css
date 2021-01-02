@@ -1,0 +1,79 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #170131;
+}
+
+/* ==== Loading ==== */
+
+.loading{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+.ring{
+    width: 240px;
+    height: 240px;
+    background: transparent;
+    border-radius: 50%;
+    box-shadow: 0 4px 0 #d457e5;
+    animation: spin 2s linear infinite;
+    -webkit-animation: spin 2s linear infinite /* safari */
+}
+
+.loader-text{
+    width: 240px;
+    height: 240px;
+    color: #ff14d8;
+    background: transparent;
+    font-family: 'poppins', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 240px;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 5px #262626;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.fade{
+    animation: fade 6s linear infinite;
+    -webkit-animation: fade 6s linear infinite; /* safari */
+}
+
+/* ==== animação ==== */
+
+@keyframes spin{
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* safari */ 
+@-webkit-keyframes spin{
+    0% { -webkit-animation: rotate(0deg); }
+    100% { -webkit-animation: rotate(360deg); }
+}
+
+@keyframes fade{
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+/* safari */ 
+@-webkit-keyframesfade{
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
