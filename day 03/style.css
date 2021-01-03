@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+section{
+    height: 100vh;
+    width: 100%;
+    color: #fce040;
+    background: #252323;
+    overflow: hidden;
+    position: absolute;
+}
+
+.sliding{
+    font-size: 6.2rem;
+    white-space: nowrap; /* não quebrar o texto */
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    animation: slide 5s linear infinite;
+}
+.sliding i{color: rgb(255, 40, 40);}
+.wrapper i{color: #8257e5}
+
+.wrapper{
+    height: 100vh;
+    width: 50%;
+    color: #fffafa;
+    background: #57d425;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@keyframes slide{
+    0% { transform: translate(0%,-50%);}
+    25% { transform: translate(-12,5%,-25%);}
+    50% { transform: translate(-25%,0%);}
+    75% { transform: translate(-37,5%,-25%);}
+    100% { transform: translate(-50%,-50%);}
+}
