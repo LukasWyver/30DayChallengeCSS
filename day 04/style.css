@@ -1,0 +1,104 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: "Pacifico", sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #281a43;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: #fafafc;
+    font-size: 5rem;
+    margin-bottom: 80px;
+}
+
+h2 .fas{
+    color: aquamarine;
+    font-size: 2.5rem;
+}
+.fas:hover{
+    color: rgb(82, 247, 192);
+    font-size: 3.5rem;
+    transition: 1s;
+}
+.btn .fas{
+    color:#ee3fd1;
+}
+.btn .fas:hover{
+    color:#42f7ab;
+}
+/* ===== loader ==== */
+
+.btn{
+    width: 350px;
+    height: 120px;
+    color: #f99094;
+    background: transparent;
+    font-weight: lighter;
+    font-size: 2rem;
+    border: 8px solid;
+    border-radius: 26px;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+}
+
+.btn::before,
+.btn::after{
+    content: ""; /* incluído dois content (antes e depois de btn) */
+    width: 20px;
+    height: 8px;
+    background: #281a43;
+    position: absolute;
+    transform: skewX(50deg); /* inclinar o elemento */
+    transition: .4s ease;
+}
+
+.btn::before{
+    top: -8px;
+    left: 10%;
+}
+
+.btn::after{
+    bottom: -8px;
+    right: 10%;
+}
+
+.btn:hover{
+    border-color:#f34fd8;
+}
+.btn:hover::before{
+    left: 80%;
+}
+.btn:hover::after{    
+    right: 80%;
+}    
+
+span{
+    margin-top: 60px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    display: inline;
+}
+span h3{
+    font-weight:lighter;
+}
+span .fas{
+    font-size: 1.5rem;
+    color: #f99094;
+}
+span .fas:hover{
+    font-size: 1.5rem;
+    color:#f99094
+}
