@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #350f0f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heartbeat{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.message{
+    color: #161616;
+    font-family: 'Roboto Mono', monospace;
+    text-shadow: 5px 5px 5px #000000;
+    font-weight: bold;
+    font-size: 10rem;
+    display: flex;
+    transition: 0.5s;
+}
+span:hover{
+    color: rgb(255, 255, 255);
+}
+
+/* ===== heart ===== */
+
+.heart{
+    margin-top: 20px;
+    width: 60px;
+    height: 60px;
+    background: #ff4343;
+    transform: rotate(45deg);
+    position: relative;
+    animation: heartbeat 2s linear infinite;
+}
+
+.heart::before, .heart::after{
+    content: ' ';
+    width: 60px;
+    height: 60px;
+    background:#ff4343;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.heart::before{
+    top:-30px
+}
+
+.heart::after{
+    left: -30px;
+}
+
+/* ===== animação ===== */
+
+@keyframes heartbeat{
+    0% { transform: scale(1) rotate(45deg); } 
+
+    25% { transform: scale(1) rotate(45deg); } 
+
+    30% { transform: scale(1.4) rotate(45deg); } 
+
+    50% { transform: scale(1.2) rotate(45deg); } 
+
+    70% { transform: scale(1.4) rotate(45deg); } 
+
+    90% { transform: scale(1) rotate(45deg); } 
+
+    100% { transform: scale(1) rotate(45deg); } 
+
+}
