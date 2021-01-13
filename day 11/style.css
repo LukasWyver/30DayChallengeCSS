@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: sans-serif,arial;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #8257e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: #161616;   
+    font-size: 2.8rem;
+    margin-bottom: 80px;
+    text-shadow: 2px 2px 2px #71ff64 ;
+}
+
+/* ===== botão ====== */ 
+.btn{
+    width: 200px;
+    height: 60px;
+    color: #161616;
+    font-weight: bold;
+    background: transparent;
+    font-size: 1.2rem;
+    border: 4px solid #0fda7b;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px #077542;
+    cursor: pointer;
+    overflow: hidden;
+    transition-duration: 0.5s;
+    position: relative;
+}
+
+.btn::after{
+    content: '';
+    width: 100%;
+    height: 0;
+    background: #0fda7b;
+    border-radius:  0 0 50% 50% ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Precisa para o texto do btn ficar por cima */ 
+    transition-duration: 0.5s;
+}
+
+.btn:hover{
+    color: #e9e2dc;
+    font-size: 1.6rem;
+}
+
+.btn:hover::after{
+    height: 100px;
+}
