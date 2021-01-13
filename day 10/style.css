@@ -1,0 +1,38 @@
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background-color:#8257e5;
+  }
+  
+  
+  h1{
+    color:rgb(0,0,0);
+    font-size:50px;
+    font-family: sans-serif;
+    text-shadow: 2px 2px #99ff33 ;
+  }
+  
+  h3{
+    justify-content:center;
+    align-items:center;
+    font-size:32px;
+    font-weight:bold;
+    font-family:arial;
+    opacity:0.5;
+  }
+  
+  
+  span::before{
+    content:'';
+    animation:word-swith 5s infinite;
+  }
+  
+  @keyframes word-swith{
+    0% { content: '💻'}
+    25% { content: '🏀'}
+    50% { content: '🎧'}
+    75% { content: '🎮'}
+    100% { content: '👩‍❤️‍👨'}
+  }
