@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Anton';
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://t.wallpaperweb.org/wallpaper/nature/2560x1440/paradisecorner2560x1440wallpaper6512.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+}
+
+h1{
+    color: transparent;
+    background-image: url(http://www.pattigham.at/system/web/GetImage.ashx?fileid=1929381&mode=O);
+    background-size: cover;
+    font-size:12rem;
+    -webkit-background-clip: text;
+    animation: move-background 20s linear infinite;
+}
+
+
+
+@keyframes move-background { 
+    from { background-position: 0 0;}
+
+    to { background-position: 100% 100%;}
+}
+
