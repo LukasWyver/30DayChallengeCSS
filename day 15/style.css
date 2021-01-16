@@ -1,0 +1,55 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P';
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #340f49;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    animation: shake 3s linear infinite;
+    animation-direction:alternate;
+}
+
+h1{
+    color:#fff;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 0 0 8px rgb(225, 188, 255), 0 40px 3px rgba(0,0,0,.4); /* efeito de blur e shadow */
+}
+span{
+    font-family: sans-serif;
+    margin-right: 20px;
+    font-size: 3rem;
+}
+
+.fas{
+    margin-top: 80px;
+    position:absolute;
+    top: 80%;
+    right: 45%;
+    color: #8257e5;
+    font-size: 8rem;
+    transition: .7s;
+    transform: 0.1s;
+}
+
+.fas:hover{
+    color:yellowgreen;
+    text-shadow: 0 0 8px rgb(94, 235, 94), 0 40px 3px rgba(0,0,0,.4);
+    cursor: pointer;
+}
+
+@keyframes shake {
+    from { transform: rotate(-5deg) }
+
+    to { transform: rotate(5deg) }
+}
