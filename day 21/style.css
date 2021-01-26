@@ -30,8 +30,8 @@ span{
 }
 
 .bouncing span{
-    width: 64px;
-    height: 64px;
+    width: 48px;
+    height: 48px;
     background: #16151a;
     border-radius: 50%;
     margin: 0 10px;
