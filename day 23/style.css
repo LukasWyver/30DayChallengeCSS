@@ -1,0 +1,70 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend Mega', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #0b090a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: #fefae0;
+    font-size: 1.8rem;
+    margin-bottom: 80px;
+}
+
+
+p{
+    color: white;
+    margin-top: 30px;
+    font-size: 1.2rem;
+    text-shadow: 0 0 4px #fefae0;
+}
+
+/* ===== botão ==== */ 
+
+.btn {
+    text-align: center;
+    padding: 25px;
+    width: 400px;
+    height: 120px;
+    color: #5863F8;
+    background: transparent;
+    font-size: 2rem;
+    letter-spacing: .4rem;
+    text-shadow: 0 0 4px #5863F8;
+    border-radius: 8px;
+    border: 2px solid #5863F8;
+    box-shadow: 0 0 8px #5863F8, 0 0 24px #5FBFF9;
+    cursor: pointer;
+    position: relative;
+}
+
+.btn:hover{
+    color: #F42B03;
+    text-shadow: 0 0 4px #F42B03;
+    border: 2px solid #F42B03;
+    box-shadow: 0 0 8px #F42B03, 0 0 24px #E89005;
+    animation: shake 0.6s linear;
+}
+
+
+@keyframes shake{
+    0% { transform: rotate(0);}
+
+    25% { transform: rotate(10deg);}
+
+    50% { transform: rotate(-10deg);}
+    
+    100% { transform: rotate(10deg);}
+
+}
